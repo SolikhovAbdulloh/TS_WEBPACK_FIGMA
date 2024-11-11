@@ -90,4 +90,5 @@ async function PrintUser() {
     });
 }
 PrintUser();
+console.log('asdasd');
 //# sourceMappingURL=index.js.map

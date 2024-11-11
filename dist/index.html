@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="contiener">
+      <main>
+        <section class="flex gap-4">
+            
+          <div class="firts_modul w-[250px] h-[700px] p-4 bg-black flex flex-col justify-between">
+
+           <a href="#"><img src="../img/Logo3.png" alt=""></a> 
+
+            <div class="btn_menu flex flex-col gap-3">
+             
+                <button type="button" class="flex gap-3 text-[white] items-center text-[16px] rounded-[4px] px-[16px] py-[12px] w-[192px] h-[48px]  font-medium"><i class="fa-brands  fa-slack"></i>Dashboard</button>
+                <button type="button" class="flex gap-3 text-[white]  items-center text-[16px] rounded-[4px] px-[16px] py-[12px] w-[192px] h-[48px]  font-medium"><i class="fa fa-car" aria-hidden="true"></i>Drivers</button>
+                <button type="button" class="flex gap-3 text-[white]  items-center text-[16px] rounded-[4px] px-[16px] py-[12px] w-[192px] h-[48px]  font-medium"><i class="fa fa-book" aria-hidden="true"></i>Bookings</button>
+                <button type="button" class="flex gap-3 text-[white]  items-center text-[16px] rounded-[4px] px-[16px] py-[12px] w-[192px] h-[48px]  font-medium"><i class="fa-solid fa-bell"></i>Notifications</button>
+                <button type="button" class="flex gap-3 text-[white]  items-center text-[16px] rounded-[4px] px-[16px] py-[12px] w-[192px] h-[48px] font-medium"><i class="fa fa-gear" aria-hidden="true"></i> Settings</button>
+                
+
+            </div>
+            <div class="w-[100%] border-[grey] boder-[solid] border-[1px] opacity-1 mt-4"></div>
+            <div class="flex flex-col gap-3">
+                <button type="button" class="flex gap-3 text-[white] items-center text-[16px] rounded-[4px] px-[16px] py-[12px] w-[192px] h-[48px]  font-medium"><i class="fa-solid fa-credit-card"></i> Payment Details</button>
+                <button type="button" class="flex gap-3 text-[white] items-center text-[16px] rounded-[4px] px-[16px] py-[12px] w-[192px] h-[48px]  font-medium"><i class="fa-solid fa-file-lines"></i> Car Report</button>
+
+            </div>
+                <button type="button" class="flex gap-3 text-[white] items-center text-[16px] rounded-[4px] px-[16px] py-[12px] w-[192px] h-[48px]  font-medium" id="Exit"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+
+        </div>
+
+          <div class="second_modul  w-[344px] h-[700px] flex flex-col justify-between p-3 bg-[#F8F7F1]">
+
+            <div class="flex flex-col gap-2">
+                <h3 class="text-[20px] font-medium">Todays Statistics</h3>
+                <p class="text-[14px] font-normal text-[grey]" id="Date"></p>
+            </div>
+
+            <div class="rounded-[8px] bg-[#FDFDFD] pl-[24px] pr-[24px] flex flex-col justify-around py-[24px] w-[288px] h-[190px]">
+        <span class="flex justify-between items-center">
+
+                          <h2 class="text-[30px] font-bold">5 person</h2>
+                            <p class="text-[16px] font-medium text-[red]">↓ 15%</p>
+            </span>
+            <p class="text-[14px] font-normal text-[grey]">Compared to $9940 yesterday</p>
+            <p class="text-[16px] flex justify-between items-center font-medium ">Last week Income <span>$25658.00</span></p>
+            </div>
+
+              <div class="rounded-[8px] bg-[#FDFDFD] pl-[24px] pr-[24px] flex flex-col justify-around py-[24px] w-[288px] h-[190px]">
+        <span class="flex justify-between items-center">
+
+                          <h2 class="text-[30px] font-bold">$ 5660.00</h2>
+                            <p class="text-[16px] font-medium text-[green]">↓ 25%</p>
+            </span>
+            <p class="text-[14px] font-normal text-[grey]">Compared to $5640 yesterday</p>
+            <p class="text-[16px] flex justify-between items-center font-medium ">Last week Income <span>$26658.00</span></p>
+            </div>
+
+
+              <div class="rounded-[8px] bg-[#FDFDFD] pl-[24px] pr-[24px] flex flex-col  p-1 py-[24px] w-[288px] h-[190px]">
+        <span class="flex justify-between items-center">
+
+                          <h2 class="text-[19px] font-medium">Hire vs Cancel</h2>
+                            <p class="text-[16px] font-medium cursor-pointer text-[grey]">Today</p>
+            </span>
+            <img class="bg-[white] bg-cover bg-no-repeat"  src="../img/aaa.png" alt="">
+           
+        </div>
+
+
+          </div>
+
+          <div class="third_modul w-[100%]  p-3">
+        <form class="flex items-center gap-3 justify-end">
+                <img src="../img/Notification icon.png" class="cursor-pointer" alt="">
+                <input type="text" name="price" id="price" class="w-[53%] rounded-md border-0 py-1.5 pl-8 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 relative p-3" placeholder="Search...">
+                <i class="fa-solid absolute text-[grey] cursor-pointer fa-magnifying-glass"></i>
+        </form>
+
+        <div>
+            <p class="font-bold text-[18px]">Live Car Status</p>
+          <table>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>Car no</th>
+      <th>Driver</th>
+      <th>Status</th>
+      <th>Earing</th>
+      <th>Send</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+   
+   
+  </tbody>
+</table>
+
+        </div>
+
+
+          </div>
+        </section>
+      </main>
+    </header>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

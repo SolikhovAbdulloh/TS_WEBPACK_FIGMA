@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contiener{
+    margin: 0 auto;
+    padding: 20px 40px;
+    max-width: 1440px;
+}
+
+button:hover{
+color: black;
+background-color:#006AFF
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ichki chegaralarni birlashtiradi */
+  margin-top: 30px;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Qatorlar orasida chiziq */
+}
+
+th {
+  background-color: #ced4cf33; /* Sarlavha fon rangi */
+  color: rgba(24, 1, 1, 0.308);
+}
+
+
